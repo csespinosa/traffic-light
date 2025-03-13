@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #f0f0f0;
+}
+
+.semaforo {
+    width: 150px;
+    height: 400px;
+    background-color: #333;
+    border: 10px solid #222;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.colorOfSemaforo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #444;
+}
+
+.colorOfSemaforo.red {
+    background-color: #441111;
+}
+
+.colorOfSemaforo.yellow {
+    background-color: #443311;
+}
+
+.colorOfSemaforo.green {
+    background-color: #114411;
+}
+
+.colorOfSemaforo.red.active {
+    background-color: #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.colorOfSemaforo.yellow.active {
+    background-color: #ffff00;
+    box-shadow: 0 0 20px #ffff00;
+}
+
+.colorOfSemaforo.green.active {
+    background-color: #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3b821;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d28e19;
+}
+
+.colorOfSemaforo.blue {
+    background-color: #0a5471;
+}
+
+.colorOfSemaforo.blue.active {
+    background-color: #25e7ea;
+    box-shadow: 0 0 20px #15b6cb;
+}
+
+.btnBlue {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4aa8e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btnBlue:hover {
+    background-color: #3ca8da;
+}
